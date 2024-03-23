@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "prisma.prisma",
+    "donjayamanne.typescript-notebook",
+    "gruntfuggly.todo-tree"
+  ]
+}
