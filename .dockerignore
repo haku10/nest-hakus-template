@@ -1,0 +1,11 @@
+# ignore all
+**
+# except for followings
+!prisma/**
+!src/**
+!test/**
+!.tool-versions
+!nest-cli.json
+!package.json
+!package-lock.json
+!tsconfig*

@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach to NestJS Container",
+      "skipFiles": ["<node_internals>/**"],
+      // _DOCKER_COMPOSE_HOST_PORT_BACKEND_DEBUG をデフォルト設定から変えている場合は変更
+      "port": 19229, 
+      "address": "localhost",
+      "restart": true,
+      "localRoot": "${workspaceFolder}",
+      "remoteRoot": "/app",
+      "sourceMaps": true,
+      "outFiles": [
+        "${workspaceFolder}/dist/**/*.js",
+        "!**/node_modules/**" 
+        ]  // Where the built files are located
+    }
+  ]
+}
