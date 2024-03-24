@@ -33,7 +33,7 @@ services:
       MYSQL_PASSWORD: user
     command: --sql-mode=NO_ENGINE_SUBSTITUTION
     ports:
-      - '${_DOCKER_COMPOSE_HOST_PORT_BACKEND:-13306}:3306'
+      - '${_DOCKER_COMPOSE_HOST_PORT_BACKEND:-13316}:3306'
     volumes:
       - ./.docker/db/initdb.d:/docker-entrypoint-initdb.d
       - ./.docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
